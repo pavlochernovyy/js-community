@@ -1,0 +1,18 @@
+{
+  "name": "case5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify-html": "^1.0.6",
+    "webpack": "^5.64.2",
+    "webpack-stream": "^7.0.0"
+  }
+}

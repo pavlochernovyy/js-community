@@ -1,4 +1,4 @@
-# Useful plugins:
+# Useful Gulp plugins:
 
 - gulp-svg2png
 - gulp-image

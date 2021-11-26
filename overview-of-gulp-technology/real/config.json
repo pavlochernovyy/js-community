@@ -1,0 +1,5 @@
+{
+  "ENDPOINT_PATH": "http://localhost:3000",
+  "CLIENTS_COUNT": 2,
+  "PULL_INTERVAL": 500
+}
