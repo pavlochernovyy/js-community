@@ -1,0 +1,71 @@
+@import '../partials/mixins';
+@import '../partials/colors';
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  @include wrapper_content(71px);
+}
+
+.container_logo {
+  @include simple_container;
+  min-width: 585px;
+}
+
+.corporate_logo {
+  height: 35px;
+  background-image: url(./img/logo-main.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.navigation_header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.navigation_header__menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 436px;
+  margin-right: 86px;
+}
+
+.navigation_header__item_container {
+  @include simple_container;
+  align-items: flex-start;
+}
+
+.item_container__title_active {
+  border-bottom: 2px solid $violet;
+  width: 27px;
+  height: 5px;
+}
+
+.item_container__title {
+  border-bottom: 2px;
+  width: 27px;
+}
+
+.navigation_header__translate {
+  display: flex;
+  min-width: 56px;
+  justify-content: space-between;
+}
+
+.navigation_header__user_icon {
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/user.png);
+  background-repeat: no-repeat;
+  margin-left: 42px;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .navigation_header {
+    display: none;
+  }
+}

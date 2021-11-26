@@ -1,0 +1,70 @@
+@import './colors';
+
+@mixin simple_container($flex-direction: column) {
+  display: flex;
+  flex-direction: $flex-direction;
+}
+
+@mixin container($flex-direction, $justify-content: flex-end) {
+  @include simple_container($flex-direction);
+  width: 100%;
+  position: relative;
+  justify-content: $justify-content;
+}
+
+@mixin wrapper_content($height, $width: 1224px) {
+  width: $width;
+  height: $height;
+  display: flex;
+  margin: auto;
+}
+
+@mixin wrapper_content_free_height($width: 1224px) {
+  width: $width;
+  display: flex;
+  margin: auto;
+}
+
+@mixin button_link($with, $margin-top) {
+  width: $with;
+  height: 48px;
+  border-radius: 30px;
+  background: linear-gradient(245.38deg, #6200ed -11.72%, #03dac5 95.7%);
+  color: $white;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin text_link($margin-left) {
+  width: 154px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: $dark-violet;
+  margin-left: $margin-left;
+}
+
+@mixin img($with, $height, $url) {
+  min-width: $with;
+  height: $height;
+  background-image: $url;
+  background-repeat: no-repeat;
+}
+
+@mixin title($line-height) {
+  font-size: 36px;
+  line-height: $line-height;
+}
+
+@mixin how_it_works_img($url) {
+  @include img(268px, 200px, $url);
+}
+
+@mixin our_team_img($url) {
+  @include img(256px, 256px, $url);
+}

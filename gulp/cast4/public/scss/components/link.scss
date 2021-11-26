@@ -1,0 +1,18 @@
+@import '../partials/colors';
+@import '../partials/mixins';
+
+.text_link {
+  @include text_link(24px);
+}
+
+.link_inactive {
+  color: $gray;
+}
+
+.button_link {
+  @include button_link(176px, 40px);
+}
+
+.button_link__form {
+  @include button_link(280px, 44px);
+}

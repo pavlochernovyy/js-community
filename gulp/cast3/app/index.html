@@ -1,0 +1,18 @@
+<head>
+  <title>Your App</title>
+
+  <!-- @if NODE_ENV='production' -->
+  <script src="some/production/lib/like/analytics.js"></script>
+  <!-- @endif -->
+</head>
+<body>
+  <!-- @ifdef DEBUG -->
+  <h1>
+    Debugging mode -
+    <!-- @echo RELEASE_TAG -->
+  </h1>
+  <!-- @endif -->
+  <p>
+    <!-- @include welcome-message.txt -->
+  </p>
+</body>

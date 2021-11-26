@@ -1,0 +1,14 @@
+@import 'partials/colors';
+
+body {
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: gilroy-regular, sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $dark-gray;
+}
